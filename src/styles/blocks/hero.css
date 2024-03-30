@@ -1,0 +1,42 @@
+.hero {
+	display: grid;
+	gap: 2rem;
+	align-items: center;
+	padding-inline: 4rem;
+	padding-block: 3rem 1rem;
+}
+
+.hero__image {
+	grid-column: 2 / span 4;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 160px;
+}
+
+.hero__description {
+	position: relative;
+	grid-column: 7 / -2;
+}
+
+.hero__hi {
+	position: absolute;
+	left: 0;
+	top: -4px;
+	margin: 0;
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 1;
+}
+
+.hero__logo {
+	width: 100%;
+}
+
+@media (width >= 1024px) {
+	.hero {
+		grid-template-columns: repeat(12, 1fr);
+		padding-inline: 8rem;
+		padding-block: 6rem 2rem;
+	}
+}

@@ -1,0 +1,64 @@
+@import "colors.css";
+@import "blocks/hero.css";
+@import "blocks/footer.css";
+@import "utils.css";
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr auto;
+	height: 100%;
+	color: var(--color-dark);
+	font-family: Inter, sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	background-color: var(--color-platinum);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+hr {
+	height: 24px;
+	border: none;
+	border: 1px solid var(--color-nickel);
+	background: repeating-linear-gradient(
+		-45deg,
+		var(--color-dark),
+		var(--color-dark) 5%,
+		var(--color-yellow) 5%,
+		var(--color-yellow) 15%
+	);
+}
+
+a {
+	color: var(--color-grey);
+	font-weight: 600;
+	text-underline-offset: 0.15em;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	column-gap: 2rem;
+	padding-inline: 4rem;
+}
