@@ -1,6 +1,7 @@
 {
 	"extends": ["stylelint-config-standard"],
 	"rules": {
+		"color-hex-length": "long",
 		"import-notation": "string",
 		"selector-class-pattern": null
 	}
