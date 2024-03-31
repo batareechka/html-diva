@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260">
+	<style>
+		#surface {
+			fill: #eaf91b;
+		}
+
+		#symbol {
+			fill: #121212;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			#surface {
+				fill: #121212;
+			}
+
+			#symbol {
+				fill: #eaf91b;
+			}
+		}
+	</style>
+
+  <path id="surface" d="M0 0h260v260H0V0Z"/>
+  <path id="symbol" d="m77.8 124.63-48.98 18.83L77.8 162.3V177L10 151.07v-15.22l67.8-26.05v14.83ZM117.12 140.5h24.7l-12.02-33.8h-.26l-12.42 33.8Zm2-56.5h21.5l35.63 92.1H154.5l-7.21-20.51h-35.64l-7.47 20.5h-21.1L119.14 84ZM181.4 162.3l48.98-18.84-48.98-18.83V109.8l67.8 26.05v15.22L181.4 177v-14.7Z"/>
+</svg>
